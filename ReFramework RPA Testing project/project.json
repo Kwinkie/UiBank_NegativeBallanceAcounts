@@ -1,0 +1,143 @@
+{
+  "name": "RPA_UiBankDemo",
+  "description": "The process creates a list with all accounts that have a negative balance",
+  "main": "Main.xaml",
+  "dependencies": {
+    "UiPath.Credentials.Activities": "[1.1.6479.13204]",
+    "UiPath.Excel.Activities": "[2.8.5]",
+    "UiPath.System.Activities": "[20.4.0]",
+    "UiPath.Testing.Activities": "[1.0.0]",
+    "UiPath.UIAutomation.Activities": "[20.4.1]",
+    "UiPath.WebAPI.Activities": "[1.4.5]",
+    "UiPathTeam.JsonToCsvConverter.Activities": "[1.1.0]"
+  },
+  "webServices": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "19.10.4.0",
+  "projectVersion": "1.1.38264303",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "isPausable": true,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Process",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "fileInfoCollection": [
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "81e03e44-a731-4b0d-9d43-9f3e397fdb41",
+        "fileName": "TestCases\\Environment\\Verif_ApiToken.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "c1eebbbf-47d5-401c-894b-745c815b64e3",
+        "fileName": "TestCases\\Environment\\Verif_AssetSet.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "b9f6d8ef-1bfe-42ea-b2b1-f6a31b6dbe63",
+        "fileName": "TestCases\\Environment\\Verif_EndpointFormat.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "4ad2342e-689a-407c-bd08-6e808a97da06",
+        "fileName": "TestCases\\NegativeAccountsProcess\\Verif_NegAccountsApi.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "0b6638ae-8ab8-4d37-af03-d164cb461132",
+        "fileName": "TestCases\\NegativeAccountsProcess\\Verif_NegAccountsUi.xaml"
+      }
+    ]
+  },
+  "arguments": {
+    "input": [
+      {
+        "name": "in_OrchestratorQueueName",
+        "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+        "required": false,
+        "hasDefault": false
+      }
+    ],
+    "output": [
+      {
+        "name": "out_ResultFileName",
+        "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      }
+    ]
+  },
+  "expressionLanguage": "VisualBasic",
+  "entryPoints": [
+    {
+      "filePath": "TestCases\\Environment\\Verify_ApiToken.xaml",
+      "uniqueId": "48a379cc-96a2-4c6d-a857-5a9dae884168",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "TestCases\\Environment\\Verify_AssetsAreSet.xaml",
+      "uniqueId": "e0981413-e3e4-4376-b404-8bb659dc9b70",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "TestCases\\Environment\\Verify_Endpoint.xaml",
+      "uniqueId": "1682e286-9369-45fa-9bfd-730b0bb26373",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "TestCases\\NegativeAccountsProcess\\Verify_NegativeAccountsApi.xaml",
+      "uniqueId": "3f2f66c4-254a-4987-b1f5-715047881381",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "TestCases\\NegativeAccountsProcess\\Verify_NegativeAccountsUi.xaml",
+      "uniqueId": "ff5cc4d8-634a-471f-bcf9-d8f8b8f4fe4d",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "TestCases\\NegativeAccountsProcess\\Verif_NegAccountsApi.xaml",
+      "uniqueId": "4ad2342e-689a-407c-bd08-6e808a97da06",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "TestCases\\NegativeAccountsProcess\\Verif_NegAccountsUi.xaml",
+      "uniqueId": "0b6638ae-8ab8-4d37-af03-d164cb461132",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "TestCases\\Environment\\Verif_ApiToken.xaml",
+      "uniqueId": "81e03e44-a731-4b0d-9d43-9f3e397fdb41",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "TestCases\\Environment\\Verif_AssetSet.xaml",
+      "uniqueId": "c1eebbbf-47d5-401c-894b-745c815b64e3",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "TestCases\\Environment\\Verif_EndpointFormat.xaml",
+      "uniqueId": "b9f6d8ef-1bfe-42ea-b2b1-f6a31b6dbe63",
+      "input": [],
+      "output": []
+    }
+  ]
+}
