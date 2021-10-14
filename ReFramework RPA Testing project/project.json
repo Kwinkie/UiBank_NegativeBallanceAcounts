@@ -9,22 +9,27 @@
     "UiPath.Testing.Activities": "[1.0.0]",
     "UiPath.UIAutomation.Activities": "[20.4.1]",
     "UiPath.WebAPI.Activities": "[1.4.5]",
-    "UiPathTeam.JsonToCsvConverter.Activities": "[1.1.0]"
+    "UiPathTeam.JsonDataConverter.Activities": "[1.1.0]"
   },
   "webServices": [],
+  "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "19.10.4.0",
   "projectVersion": "1.1.38264303",
   "runtimeOptions": {
     "autoDispose": false,
     "isPausable": true,
+    "isAttended": false,
     "requiresUserInteraction": true,
     "supportsPersistence": false,
     "excludedLoggedData": [
       "Private:*",
       "*password*"
     ],
-    "executionType": "Workflow"
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": false
   },
   "designOptions": {
     "projectProfile": "Developement",
@@ -32,6 +37,9 @@
     "libraryOptions": {
       "includeOriginalXaml": false,
       "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
     },
     "fileInfoCollection": [
       {
@@ -59,7 +67,8 @@
         "testCaseId": "0b6638ae-8ab8-4d37-af03-d164cb461132",
         "fileName": "TestCases\\NegativeAccountsProcess\\Verif_NegAccountsUi.xaml"
       }
-    ]
+    ],
+    "modernBehavior": false
   },
   "arguments": {
     "input": [
@@ -138,6 +147,16 @@
       "uniqueId": "b9f6d8ef-1bfe-42ea-b2b1-f6a31b6dbe63",
       "input": [],
       "output": []
+    },
+    {
+      "filePath": "Main.xaml",
+      "uniqueId": "36dd8ed1-debe-4077-b4b0-c0f2a94e251f",
+      "input": [],
+      "output": []
     }
-  ]
+  ],
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Legacy"
 }
